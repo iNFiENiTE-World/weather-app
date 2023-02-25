@@ -1,0 +1,24 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Application to get real-time weather data",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iNFiENiTE-World/weather-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iNFiENiTE-World/weather-app/issues"
+  },
+  "homepage": "https://github.com/iNFiENiTE-World/weather-app#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "request": "^2.88.2"
+  }
+}

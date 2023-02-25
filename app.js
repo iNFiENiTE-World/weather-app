@@ -1,11 +1,9 @@
-console.log('Starting');
+require('dotenv').config()
+const request = require('request')
 
-setTimeout(() => {
-    console.log('2 second timer');
-}, 2000)
+const url = `http://api.weatherstack.com/current?access_key=${process.env.ACCESS_KEY}&query=${process.env.QUERY}`
 
-setTimeout(() => {
-    console.log('0 second timer');
-}, 0)
-
-console.log('Stopping');
+request({ url }, (error, response) => {
+    const data = JSON.parse(response.body)
+    console.log(data.current)
+})
